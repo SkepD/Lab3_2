@@ -12,7 +12,6 @@ int main()
     double x1, x2, eps, time;
     unsigned int variant, need_iterations, N;
     time_t start, end;
-    char y_n;
     while(1)
     {
         do
@@ -23,14 +22,8 @@ int main()
         do
         {
             printf("Show count of iteranions?\n1 = Yes\n2 = No\n");
-            scanf("%ñ", y_n);
+            scanf("%u", &need_iterations );
             system("cls");
-            if(y_n==121){
-                need_iterations==1;
-            }
-            else{
-                need_iterations==2;
-            }
             if(need_iterations==1)
             {
                 do
